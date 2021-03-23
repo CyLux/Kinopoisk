@@ -8,14 +8,15 @@
 
     <ImageView
         android:id="@+id/tvLastMoviePoster"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="15dp"
         android:src="@mipmap/ic_launcher"
         app:layout_constraintEnd_toEndOf="@+id/tvLastMovieName"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="@+id/tvLastMovieName"
-        app:layout_constraintTop_toBottomOf="@+id/tvLastMovieName" />
+        app:layout_constraintTop_toBottomOf="@+id/tvLastMovieName"
+        app:srcCompat="@drawable/logo" />
 
     <TextView
         android:id="@+id/tvTitle"
