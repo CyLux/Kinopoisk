@@ -6,24 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".ui.dashboard.DashboardFragment">
 
-    <ImageView
-        android:id="@+id/tvLastMoviePoster"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginTop="15dp"
-        android:src="@mipmap/ic_launcher"
-        app:layout_constraintEnd_toEndOf="@+id/tvLastMovieName"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="@+id/tvLastMovieName"
-        app:layout_constraintTop_toBottomOf="@+id/tvLastMovieName"
-        app:srcCompat="@drawable/logo" />
-
     <TextView
         android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Вы прошлый раз смотрели:"
+        android:text="Последний просмотренный:"
         android:textColor="#000000"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -41,4 +29,14 @@
         app:layout_constraintEnd_toEndOf="@+id/tvTitle"
         app:layout_constraintStart_toStartOf="@+id/tvTitle"
         app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+    <ImageView
+        android:id="@+id/tvLastMoviePoster"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/rectangle_without_angle"
+        app:layout_constraintEnd_toEndOf="@+id/tvLastMovieName"
+        app:layout_constraintStart_toStartOf="@+id/tvLastMovieName"
+        app:layout_constraintTop_toBottomOf="@+id/tvLastMovieName" />
 </androidx.constraintlayout.widget.ConstraintLayout>
